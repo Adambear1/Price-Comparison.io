@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.store {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 800px;
+    margin: 20px auto;
+}
+
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 800px;
+    margin: 20px auto;
+}
