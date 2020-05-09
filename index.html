@@ -4,28 +4,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Price Comparison</title>
+        <script src="https://kit.fontawesome.com/a9f3433135.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
-            <aside>
-                <form action="text" id="list-one" class="list-one">
-                    <input type="text" id="input-field"
-                        class="input-field"
-                        placeholder="Enter Item">
-                    <div>
-                        <div class="list"></div>
-                    </div>
-                </form>
-            </aside>
-            <main>
+            <div>
+                <aside>
+                    <form action="text" id="list-one" class="list-one">
+                        <input type="text" id="input-field"
+                            class="input-field"
+                            placeholder="Enter Item" autofocus><i
+                            class="fas
+                            fa-question"></i>
+                        <div>
+                            <div class="note" id="note">
+                                <form action="PUSH">
+                                    <input type="text" class="item-input"
+                                        id="item-input"
+                                        placeholder="Please insert item">
+                                    <input type="text" class="price-input"
+                                        id="price-input"
+                                        placeholder="Please insert item price">
+                                    <input type="submit" value="Submit"
+                                        id='submit-input' class='submit-input'>
+                                </form>
 
-            </main>
+                            </div>
+                            <ul class="list"></ul>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+            <div>
+                <main>
+                </main>
+            </div>
+            <div class='button'>
+                <button class="btn add-btn" id="add-btn">+</button>
+                <button class="btn sort-btn" id="sort-btn">Sort</button>
+                <button class="btn close-btn" id="close-btn">Close</button>
+                <button class="btn price-btn" id="price-btn">Price</button>
+            </div>
+
 
         </div>
-        <button class="btn add-btn" id="add-btn">+</button>
-        <button class="btn sort-btn" id="sort-btn">Sort</button>
-        <button class="btn close-btn" id="close-btn">Close</button>
+
+
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

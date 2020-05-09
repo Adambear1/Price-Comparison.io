@@ -2,29 +2,116 @@
     box-sizing: border-box;
 }
 
-.store {
+body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800%;
+}
+
+aside {
+    padding: 10px 20px;
+    width: 250px;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: solid 1px #111;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button {
+    display: block;
+    flex-direction: column;
+}
+
+button:active{
+    transform: scale(.96);
+}
+
+main {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+h3 {
+    background-color: white;
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 20px 0 0;
+}
+
+.person {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     margin-bottom: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 800px;
-    margin: 20px auto;
 }
 
-
-body {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 800px;
-    margin: 20px auto;
+.fa-question {
+    transition: all .1s ease-in-out;   
+    color: red;
+    padding-left: 2px
+    
 }
+.fa-question:hover {
+    transform: scale(1.30);
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.fa-question:active {
+    transform: scale(.90);
+    cursor: pointer;
+}
+
+.note {
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+    float: right;
+    padding-left: 50px ;
+}
+
+.price-input, .item-input, .submit-input{
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    align-items: center;
+    float: center;
+}
+.total {
+    margin-top: 100px;
+}
+
