@@ -7,6 +7,13 @@
         <script src="https://kit.fontawesome.com/a9f3433135.js"
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     </head>
     <body>
         <div class="container">
@@ -28,7 +35,8 @@
                                         id="price-input"
                                         placeholder="Please insert item price">
                                     <input type="submit" value="Submit"
-                                        id='submit-input' class='submit-input'>
+                                        id='submit-input' class='submit-input
+                                        submit'>
                                 </form>
 
                             </div>
@@ -50,15 +58,22 @@
 
 
         </div>
-
-
-
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
         <script src="logic.js"></script>
+        <script type='text/javascript'>
+
+        $('.submit').on('click', (e)=>{
+            e.preventDefault();
+            console.log('hello');
+            var newData = {
+                item: $('#item-input').val().trim(),
+                price: $('#price-input').val().trim()
+            };
+            $.post('/api/input', newData).then(data => {
+                console.log('index.html', data)
+                alert('submitted')
+            })
+        })
+
+        </script>
     </body>
 </html>
