@@ -1,12 +1,1 @@
-[
-    {
-        "name": "Milk",
-        "price": 2,
-        "itemName": "milk"
-    },
-    {
-        "item": "avocado",
-        "price": "2.12",
-        "itemName": "avocado"
-    }
-]
+[{"name":"Milk","price":2,"itemName":"milk"},{"item":"avocado","price":"2.12","itemName":"avocado"},{"item":"chicken","price":"2.95","itemName":"chicken"},{"item":"grapes","price":"1.75","itemName":"grapes"},{"item":"grapes","price":"1.75","itemName":"grapes"},{"item":"gr","price":"12","itemName":"gr"},{"item":"gr","price":"12","itemName":"gr"}]

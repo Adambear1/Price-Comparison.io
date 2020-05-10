@@ -71,7 +71,10 @@
             $.post('/api/input', newData).then(data => {
                 console.log('index.html', data)
                 alert('submitted')
+                
             })
+            $('#item-input').val('') 
+            $('#price-input').val('') 
         })
 
         </script>
